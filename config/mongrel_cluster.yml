@@ -1,0 +1,10 @@
+--- 
+user: mongrel
+cwd: /var/www/vhosts/beta.urbanfutures.net/rails/urban
+log_file: log/mongrel.log
+port: "2000"
+environment: production
+group: mongrel
+address: 127.0.0.1
+pid_file: /var/run/mongrel_cluster/mongrel.pid
+servers: 3

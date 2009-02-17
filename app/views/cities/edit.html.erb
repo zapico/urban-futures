@@ -1,0 +1,17 @@
+<h1>Editing city</h1>
+
+<% form_for(@city) do |f| %>
+  <%= f.error_messages %>
+  <p>Name<br/>
+  <%= text_field 'city', 'name'  %></p>
+  <p>Latitute<br/>
+  <%= text_field 'city', 'lat'  %></p>
+  <p>Longitude<br/>
+  <%= text_field 'city', 'lng'  %></p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @city %> |
+<%= link_to 'Back', cities_path %>

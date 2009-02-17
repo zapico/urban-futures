@@ -1,0 +1,14 @@
+<div id="geomeny">
+<br/><br/>
+<img src="/images/urban.png"/>
+<p><%= link_to image_tag("/images/world.png"), :controller => 'cities', :action => 'show', :id => 'world' %></p>
+<p><%= link_to image_tag("/images/stockholm.png"), :controller => 'cities', :action => 'show', :id => 'Stockholm' %></p>
+<p><%= link_to image_tag("/images/capetown.png"), :controller => 'cities', :action => 'show',:id => 'Cape town' %></p>
+<p><%= link_to image_tag("/images/bangalore.png"), :controller => 'cities', :action => 'show',:id => 'Bangalore' %></p>
+<p><%= link_to image_tag("/images/shangai.png"), :controller => 'cities', :action => 'show',:id => 'Shangai' %></p>
+<p><%= link_to image_tag("/images/berkeley.png"), :controller => 'cities', :action => 'show',:id => 'Berkeley' %></p>
+</div>
+<div id="background_geomeny"></div>	
+<div id="map">
+<%= @map.div(:width => '100%', :height=>'100%') %>
+</div>

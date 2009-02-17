@@ -1,0 +1,16 @@
+<h1>New city</h1>
+
+<% form_for(@city) do |f| %>
+  <%= f.error_messages %>
+  <p>Name<br/>
+  <%= text_field 'city', 'name'  %></p>
+  <p>Latitute<br/>
+  <%= text_field 'city', 'lat'  %></p>
+  <p>Longitude<br/>
+  <%= text_field 'city', 'lng'  %></p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', cities_path %>

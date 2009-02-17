@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>CMS Urban futures</title>
+  <%= stylesheet_link_tag 'cms' %>
+</head>
+<body>
+
+
+<br/>
+<img src="/images/cms.png"/>
+<br/>
+	<p> iiiiiii
+		<a href="/cms"><img src="/images/home.png"/></a>
+		<a href="/"><img src="/images/site.png"/></a>
+		<a href="/logout"><img src="/images/logout.png"/></a>
+	</p>
+<div id="cms">
+	<p style="color: green"><%= flash[:notice] %></p>
+<%= yield  %>
+</div>
+<br/><br/>
+<div id="footer">
+	<p>Welcome to the content management system of Urban Futures. For help send an email
+	to zapico@verde.se</p>
+	<p><a href="http://client.verde.se">For Basecamp (the project management web) go here</a></p>	</div>
+<br/><br/>
+</body>
+</html>

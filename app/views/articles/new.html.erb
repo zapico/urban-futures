@@ -1,0 +1,22 @@
+<h1>New content</h1>
+
+<% form_for(@article) do |f| %>
+  <%= f.error_messages %>
+  <p>Title<br/>
+  <%= text_field 'article', 'name'  %></p>
+  <p>Text<br/>
+  <%= text_area 'article', 'content'  %></p>
+  <p>City<br/>
+  <p><%= collection_select("article", "city_id" , @cities, "id", "name") %></p>
+  <p><i>A WYSIWYG interface for adding the location to content is still under development.
+  Untill then you have to write the latitute and longitude. </i></p>
+  <p>Latitude<br/>
+  <%= text_field 'article', 'lat'  %></p>
+  <p>Longitude<br/>
+  <%= text_field 'article', 'lng'  %></p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', articles_path %>
