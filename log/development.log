@@ -14432,3 +14432,16 @@ Processing CitiesController#show (for 127.0.0.1 at 2009-02-17 21:59:04) [GET]
 Rendering template within layouts/application
 Rendering cities/show
 Completed in 1667ms (View: 15, DB: 2883) | 200 OK [http://localhost/cities/Stockholm]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-18 01:31:25) [GET]
+  Parameters: {"id"=>"Stockholm"}
+  [4;36;1mSQL (178.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (177.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCity Load (178.2ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name = 'Stockholm') LIMIT 1[0m
+  [4;35;1mCity Columns (177.7ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mArticle Load (202.6ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.city_id = 1) [0m
+  [4;35;1mArticle Columns (178.5ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 869ms (View: 55, DB: 1093) | 200 OK [http://localhost/]
