@@ -1,6 +1,5 @@
 class ArticlesController < ApplicationController
 layout "cms"
-before_filter :login_required
 
   # GET /articles
   # GET /articles.xml
