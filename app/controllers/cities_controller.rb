@@ -1,6 +1,6 @@
 class CitiesController < ApplicationController
   layout "application"
-  include ERB::Util
+
   # GET /cities
   # GET /cities.xml
   def index
