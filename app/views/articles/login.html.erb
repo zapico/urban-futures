@@ -1,16 +1,21 @@
-<h1>Articles</h1>
+	<h3> Login </h3>
+	<fieldset>
+		
+		<h2><%= flash[:notice] %></h2>
 
-<% for article in @articles %>
-  <p>
-  	<h3><%= article.name %></h3>
-	<p>
-    <%= link_to 'Show', article %>
-     | <%= link_to 'Edit', edit_article_path(article) %>
-     | <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
-	</p>
-  
-<% end %>
+	    <% form_tag do %>
+	    <p>
+	      <label for="name">Name:</label><br>
+	      <%= text_field_tag :username, params[:username] %>
+	    </p>
+	    <p>
+	      <label for="password">Password:</label><br>
+	      <%= password_field_tag :password, params[:password] %>
+	    </p>
+	    <p>
+	      <%= submit_tag "Login" %>
+	    </p>
+	    <% end %>
+	  </fieldset>
 
-<br />
 
-<%= link_to 'New article', new_article_path %>
