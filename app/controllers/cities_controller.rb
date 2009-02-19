@@ -21,16 +21,17 @@ class CitiesController < ApplicationController
       format.xml  { render :xml => @cities }
     end
   end
+  
   # GET /cities/1
   # GET /cities/1.xml
   def show
     if params[:id] != nil
-      @city = City.find(:first,:conditions => ["name = ?", params[:id]])
+      city = City.find(:first,:conditions => ["name = ?", params[:id]])
       else
-      @city = City.find(:first,:conditions => ["name = Stockholm"] )
+      city = City.find(:first,:conditions => ["name = Stockholm"] )
     end
-    if @city == nil
-      @city = City.find(1)
+    if city == nil
+      city = City.find(1)
     end
     #create the map
     @map = GMap.new("map_div")
@@ -39,35 +40,35 @@ class CitiesController < ApplicationController
 
     #load the articles
     # create marker for the source location 
-     @map.icon_global_init( GIcon.new(:image =>"http://www.google.com/mapfiles/ms/icons/red-pushpin.png", 
-      :shadow => "http://www.google.com/mapfiles/shadow50.png", 
-      :icon_size => GSize.new(32,32), 
-      :shadow_size => GSize.new(37,32), 
-      :icon_anchor => GPoint.new(9,32), 
-      :info_window_anchor => GPoint.new(9,2), 
-      :info_shadow_anchor => GPoint.new(18,25)), "icon_source") 
-      icon_source = Variable.new("icon_source")      
-      source = GMarker.new([@city.lat, @city.lng], 
-               :title => 'City', 
-               :info_window => @city.name, 
-               :icon => icon_source)      
-      @map.overlay_init(source) 
+    # @map.icon_global_init( GIcon.new(:image =>"http://www.google.com/mapfiles/ms/icons/red-pushpin.png", 
+    #  :shadow => "http://www.google.com/mapfiles/shadow50.png", 
+    #  :icon_size => GSize.new(32,32), 
+    #  :shadow_size => GSize.new(37,32), 
+    #  :icon_anchor => GPoint.new(9,32), 
+    #  :info_window_anchor => GPoint.new(9,2), 
+    #  :info_shadow_anchor => GPoint.new(18,25)), "icon_source") 
+    #  icon_source = Variable.new("icon_source")      
+    #  source = GMarker.new([@city.lat, @city.lng], 
+    #           :title => 'City', 
+    #           :info_window => @city.name, 
+    #           :icon => icon_source)      
+    #  @map.overlay_init(source) 
       
       # create markers one for each location found 
-      @articles = @city.articles.find(:all)
-      @articles.each do |article|
+      articles = city.articles.find(:all)
+      articles.each do |article|
         marker = GMarker.new([article.lat, article.lng], :title => article.name, :info_window => '<h2>'+article.name+'</h2>'+article.content) 
         @map.overlay_init(marker) 
       end   
     
     #center the map in the city coordinates
-    @map.center_zoom_init([@city.lat,@city.lng],13)
+    @map.center_zoom_init([city.lat,city.lng],13)
     if params[:id] == "world"
       @map.center_zoom_init([0,0],2)
     end
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @city }
+      format.xml  { render :xml => city }
     end
 
   end

@@ -15012,3 +15012,394 @@ Processing CitiesController#show (for 127.0.0.1 at 2009-02-18 18:39:59) [GET]
 Rendering template within layouts/application
 Rendering cities/show
 Completed in 1687ms (View: 15, DB: 1954) | 200 OK [http://localhost/]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:23:02) [GET]
+  Parameters: {"id"=>"Stockholm"}
+  [4;36;1mSQL (171.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (168.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCity Load (310.0ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name = 'Stockholm') LIMIT 1[0m
+  [4;35;1mCity Columns (170.2ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mArticle Load (277.6ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.city_id = 1) [0m
+  [4;35;1mArticle Columns (170.3ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 1052ms (View: 40, DB: 1269) | 200 OK [http://localhost/]
+  [4;36;1mSQL (167.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (166.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArticle Load (169.3ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.city_id = 1) [0m
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:23:14) [GET]
+  Parameters: {"id"=>"Stockholm"}
+  [4;35;1mSQL (170.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (169.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCity Load (169.3ms)[0m   [0mSELECT * FROM `cities` WHERE (name = 'Stockholm') LIMIT 1[0m
+  [4;36;1mCity Columns (169.2ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mArticle Load (170.5ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.city_id = 1) [0m
+  [4;36;1mArticle Columns (170.4ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 751ms (View: 16, DB: 1019) | 200 OK [http://localhost/cities/Stockholm]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:23:23) [GET]
+  Parameters: {"id"=>"Shanghai"}
+  [4;35;1mSQL (174.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (171.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCity Load (176.8ms)[0m   [0mSELECT * FROM `cities` WHERE (name = 'Shanghai') LIMIT 1[0m
+  [4;36;1mCity Columns (170.4ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mArticle Load (176.8ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.city_id = 5) [0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 809ms (View: 121, DB: 869) | 200 OK [http://localhost/cities/Shanghai]
+  [4;36;1mSQL (169.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (168.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArticle Load (171.7ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.city_id = 1) [0m
+  [4;35;1mArticle Load (170.2ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.city_id = 5) [0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-02-19 11:23:36) [GET]
+  [4;36;1mSQL (227.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (171.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArticle Load (173.7ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/cms
+Rendering articles/index
+  [4;35;1mArticle Columns (171.1ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 617ms (View: 197, DB: 743) | 200 OK [http://localhost/cms]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-02-19 11:23:41) [GET]
+  [4;36;1mSQL (168.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (166.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to /
+Completed in 209ms (DB: 334) | 302 Found [http://localhost/logout]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:23:43) [GET]
+  Parameters: {"id"=>"Stockholm"}
+  [4;36;1mSQL (167.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (167.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCity Load (169.1ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name = 'Stockholm') LIMIT 1[0m
+  [4;35;1mCity Columns (166.6ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mArticle Load (169.2ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.city_id = 1) [0m
+  [4;35;1mArticle Columns (168.1ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 748ms (View: 19, DB: 1007) | 200 OK [http://localhost/]
+  [4;36;1mSQL (169.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (169.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArticle Load (169.9ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.city_id = 1) [0m
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:25:42) [GET]
+  Parameters: {"id"=>"Stockholm"}
+  [4;36;1mSQL (170.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (169.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCity Load (169.7ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name = 'Stockholm') LIMIT 1[0m
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.articles):
+    /app/controllers/cities_controller.rb:57:in `show'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/zapico/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/zapico/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (81.3ms)
+Rendered /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (2.7ms)
+Rendering /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:25:45) [GET]
+  Parameters: {"id"=>"Stockholm"}
+  [4;35;1mSQL (170.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (169.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCity Load (169.4ms)[0m   [0mSELECT * FROM `cities` WHERE (name = 'Stockholm') LIMIT 1[0m
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.articles):
+    /app/controllers/cities_controller.rb:57:in `show'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/zapico/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/zapico/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (90.0ms)
+Rendered /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (1.9ms)
+Rendering /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:25:48) [GET]
+  Parameters: {"id"=>"Stockholm"}
+  [4;36;1mSQL (169.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (170.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCity Load (169.5ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name = 'Stockholm') LIMIT 1[0m
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.articles):
+    /app/controllers/cities_controller.rb:57:in `show'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `send'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:1253:in `perform_action_without_filters'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:617:in `call_filters'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/zapico/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/zapico/.gem/ruby/1.8/gems/activerecord-2.2.2/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `send'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/session_management.rb:134:in `process'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/base.rb:392:in `process'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:110:in `dispatch_unlocked'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:123:in `dispatch'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `synchronize'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:122:in `dispatch'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:132:in `dispatch_cgi'
+    /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/dispatcher.rb:39:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load_without_new_constant_marking'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:142:in `load'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/zapico/.gem/ruby/1.8/gems/activesupport-2.2.2/lib/active_support/dependencies.rb:153:in `require'
+    /usr/local/lib/ruby/gems/1.8/gems/rails-2.2.2/lib/commands/server.rb:49
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_trace (187.8ms)
+Rendered /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/_request_and_response (1.7ms)
+Rendering /Users/zapico/.gem/ruby/1.8/gems/actionpack-2.2.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:26:45) [GET]
+  Parameters: {"id"=>"Stockholm"}
+  [4;36;1mSQL (170.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (169.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCity Load (169.9ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name = 'Stockholm') LIMIT 1[0m
+  [4;35;1mCity Columns (169.3ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mArticle Load (171.7ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.city_id = 1) [0m
+  [4;35;1mArticle Columns (170.7ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 763ms (View: 19, DB: 1022) | 200 OK [http://localhost/]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:26:50) [GET]
+  Parameters: {"id"=>"Bangalore"}
+  [4;36;1mSQL (170.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (168.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCity Load (169.2ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name = 'Bangalore') LIMIT 1[0m
+  [4;35;1mCity Columns (169.1ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mArticle Load (170.3ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.city_id = 2) [0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 572ms (View: 16, DB: 848) | 200 OK [http://localhost/cities/Bangalore]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:27:12) [GET]
+  Parameters: {"id"=>"Stockholm"}
+  [4;35;1mSQL (167.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (166.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCity Load (166.8ms)[0m   [0mSELECT * FROM `cities` WHERE (name = 'Stockholm') LIMIT 1[0m
+  [4;36;1mCity Columns (166.3ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mArticle Load (167.7ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.city_id = 1) [0m
+  [4;36;1mArticle Columns (168.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 741ms (View: 15, DB: 1003) | 200 OK [http://localhost/cities/Stockholm]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:27:27) [GET]
+  Parameters: {"id"=>"Bangalore"}
+  [4;35;1mSQL (172.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (171.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCity Load (178.8ms)[0m   [0mSELECT * FROM `cities` WHERE (name = 'Bangalore') LIMIT 1[0m
+  [4;36;1mCity Columns (181.9ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mArticle Load (183.5ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.city_id = 2) [0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 877ms (View: 117, DB: 888) | 200 OK [http://localhost/cities/Bangalore]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-19 11:27:30) [GET]
+  Parameters: {"id"=>"Bangalore"}
+  [4;36;1mSQL (169.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (169.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCity Load (170.3ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name = 'Bangalore') LIMIT 1[0m
+  [4;35;1mCity Columns (170.0ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mArticle Load (170.4ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.city_id = 2) [0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 571ms (View: 15, DB: 850) | 200 OK [http://localhost/cities/Bangalore]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-02-19 11:28:14) [GET]
+  [4;35;1mSQL (170.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (169.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mArticle Load (169.7ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/cms
+Rendering articles/index
+  [4;36;1mArticle Columns (168.9ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 386ms (View: 23, DB: 679) | 200 OK [http://localhost/cms]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-02-19 11:28:35) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSQL (167.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (166.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mArticle Columns (166.6ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (167.3ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+Rendering template within layouts/cms
+Rendering articles/show
+Completed in 446ms (View: 84, DB: 667) | 200 OK [http://localhost/articles/2]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-02-19 11:31:20) [GET]
+  [4;35;1mSQL (167.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (167.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mArticle Load (167.8ms)[0m   [0mSELECT * FROM `articles` [0m
+Rendering template within layouts/cms
+Rendering articles/index
+  [4;36;1mArticle Columns (166.9ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+Completed in 382ms (View: 23, DB: 670) | 200 OK [http://localhost/cms]
