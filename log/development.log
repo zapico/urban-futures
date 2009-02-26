@@ -15403,3 +15403,68 @@ Rendering template within layouts/cms
 Rendering articles/index
   [4;36;1mArticle Columns (166.9ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
 Completed in 382ms (View: 23, DB: 670) | 200 OK [http://localhost/cms]
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2009-02-26 16:23:34) [GET]
+  Parameters: {"id"=>"Stockholm"}
+  [4;36;1mSQL (181.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (180.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mCity Load (203.8ms)[0m   [0;1mSELECT * FROM `cities` WHERE (name = 'Stockholm') LIMIT 1[0m
+  [4;35;1mCity Columns (182.2ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mArticle Load (338.2ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.city_id = 1) [0m
+  [4;35;1mArticle Columns (182.7ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Rendering template within layouts/application
+Rendering cities/show
+Completed in 1040ms (View: 48, DB: 1269) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-02-26 16:23:42) [GET]
+  [4;36;1mSQL (182.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (181.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArticle Load (183.3ms)[0m   [0;1mSELECT * FROM `articles` [0m
+Rendering template within layouts/cms
+Rendering articles/index
+  [4;35;1mArticle Columns (198.1ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+Completed in 460ms (View: 51, DB: 745) | 200 OK [http://localhost/cms]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2009-02-26 16:24:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSQL (180.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (178.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArticle Columns (179.0ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (182.6ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+  [4;36;1mCity Load (181.4ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (181.3ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mCity Load (181.6ms)[0m   [0;1mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) [0m
+Rendering template within layouts/cms
+Rendering articles/edit
+Completed in 992ms (View: 39, DB: 1265) | 200 OK [http://localhost/articles/2/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2009-02-26 16:25:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSQL (184.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (182.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mArticle Columns (181.8ms)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (182.9ms)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+  [4;35;1mCity Load (241.0ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (191.2ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mCity Load (190.9ms)[0m   [0mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) [0m
+Rendering template within layouts/cms
+Rendering articles/edit
+Completed in 1253ms (View: 143, DB: 1355) | 200 OK [http://localhost/articles/2/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2009-02-26 16:25:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSQL (180.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (475.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mArticle Columns (230.9ms)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (291.4ms)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+  [4;36;1mCity Load (277.5ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (292.9ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mCity Load (291.4ms)[0m   [0;1mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) [0m
+Rendering template within layouts/cms
+Rendering articles/edit
+Completed in 1724ms (View: 145, DB: 2040) | 200 OK [http://localhost/articles/2/edit]

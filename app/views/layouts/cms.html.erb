@@ -6,6 +6,11 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>CMS Urban futures</title>
   <%= stylesheet_link_tag 'cms' %>
+    <% if @map != nil %>
+  <%= javascript_include_tag("markerGroup")%>
+  <%= GMap.header %>
+  <%= @map.to_html %>
+  <%end%>
 </head>
 <body>
 

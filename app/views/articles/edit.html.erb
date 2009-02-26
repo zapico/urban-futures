@@ -10,7 +10,7 @@
   <%= text_field 'article', 'lat'  %></p>
   <p>Longitude<br/>
   <%= text_field 'article', 'lng'  %></p>
-
+  <%= @map.div(:width => '600px', :height=>'400px') %>
   
   <p>
     <%= f.submit "Update" %>
