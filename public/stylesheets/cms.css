@@ -9,7 +9,7 @@ body, p, ol, ul, td {
 html, body {
         }
 
- #cms {
+#cms {
     width: 80%;
     height: 100%;
 	background-color: #fff;
@@ -78,3 +78,9 @@ img{
 border: 0px;
 }
 
+label{
+	display:block;
+}
+select{
+display:block;
+}

@@ -15,16 +15,16 @@ ActiveRecord::Schema.define(:version => 20090217150650) do
     t.string   "name"
     t.text     "content"
     t.integer  "city_id"
-    t.float    "lng",        :limit => 30
-    t.float    "lat",        :limit => 30
+    t.float    "lng"
+    t.float    "lat"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "cities", :force => true do |t|
     t.string   "name"
-    t.float    "lng",        :limit => 30
-    t.float    "lat",        :limit => 30
+    t.float    "lng"
+    t.float    "lat"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

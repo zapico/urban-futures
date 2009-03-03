@@ -41,7 +41,10 @@ layout "cms"
     if @article.city 
       @map = GMap.new("map_div")
       @map.control_init(:large_map => true,:map_type => true)
-      @map.center_zoom_init([@article.city.lat,@article.city.lng],12) 
+      @map.center_zoom_init([@article.city.lat,@article.city.lng],12)
+      
+      marker = GMarker.new([@article.lat, @article.lng], :title => @article.name, :info_window => nil) 
+      @map.overlay_init(marker)
     end
   end
 

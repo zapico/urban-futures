@@ -4,4 +4,3 @@ tmp/**/*
 doc/api
 doc/app
 config/database.yml
-
